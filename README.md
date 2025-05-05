@@ -26,13 +26,13 @@ TBD
 
 ## Assembly
 
-TBD
+[Assembly](./assembly/.)
 
 ----
 
 ## Firmware
 
-TBD
+[Firmware](./firmware/.)
 
 ----
 
