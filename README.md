@@ -2,7 +2,7 @@
 
 RotarOH is an open hardware device designed to measure motor coordination and balance in rodents, such as rats and mice. This device is ideal for evaluating the effects of drugs, diseases, or brain damage in research studies.
 
-It can move at speeds from TBD to TBD.
+It can move at speeds from 0 to 80 rpm.
 
 The cost of the components is no more than TBD €, although for increased performance, precision components can be used at higher cost.
 
