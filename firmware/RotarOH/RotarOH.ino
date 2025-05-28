@@ -1,6 +1,7 @@
 #include <TimerOne.h>       // Libreria del timer 1
 #include <TimerThree.h>     // Libreria del timer 3
 #include <TimerFour.h>      // Libreria del timer 4
+#include <PinChangeInterrupt.h> //Librería para los pines PCINT
 
 #include <LiquidCrystal.h>  // Libreria de la pantalla LCD
 LiquidCrystal lcd(16, 17, 23, 25, 27, 29);
@@ -102,8 +103,8 @@ void setup() {
 
   attachInterrupt(digitalPinToInterrupt(X1_PIN),carril_1,RISING);      // Interrupciones de los finales de carrera
   attachInterrupt(digitalPinToInterrupt(X2_PIN),carril_2,RISING);
-  attachInterrupt(digitalPinToInterrupt(X3_PIN),carril_3,CHANGE);
-  attachInterrupt(digitalPinToInterrupt(X4_PIN),carril_4,CHANGE);
+  attachPCINT(digitalPinToPCINT(X3_PIN),carril_3,CHANGE);
+  attachPCINT(digitalPinToPCINT(X4_PIN),carril_4,CHANGE);
   attachInterrupt(digitalPinToInterrupt(X5_PIN),carril_5,RISING);
   attachInterrupt(digitalPinToInterrupt(X6_PIN),carril_6,RISING);
 
